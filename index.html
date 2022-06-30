@@ -1,59 +1,17 @@
 <HTML>
-
 <head>
-    <title> My First Web Page </title>
-    <script>
-        var globalName = "";
-
-        function drawName() {
-            globalName = prompt("What is your name?")
-            var num = prompt("How many times should I write your name?")
-            for (var n = 1; n <= num; n++ ) {
-                document.write(globalName + " ");
-            }
-        }
-        
-        function drawCat() {
-            for (var n=1; n<=100; n++)
-                document.write(' =^.^= ');myAudio.play();
-        }
-        
-        function guessingGame() {       
-            // var name = (prompt("what is your name"))
-            var number = Math.round( Math.random() * 100 + 1);
-            var guess = "";
-            while (guess != number) {
-                guess = prompt("Guess a number between 1 and 100: ");
-
-                if (guess == "stop") return;
-                if ( guess > number )
-                    alert("Too High.");
-                else if ( guess < number)
-                    alert("too low.");
-                else 
-                    alert("Correct! You win!");
-                // document.write(name)
-            }
-
-            for (var i=0; i<10; i++) {
-                document.writeln(globalName);
-            }
-
-
-            document.write(name);
-        }
-    </script>
+    <title>                          My First Web Page </title>
 </head>
-
 <body>
     <script>
-        var myAudio = new Audio('http://soundbible.com/grab.php?id=1954&type=mp3');
-    </script>
+var myAudio = new Audio('http://soundbible.com/grab.php?id=1954&type=mp3');
+</script>
     <h1>Judah's First Web Page</h1>
-    <h3>I'm not just learning Javascript, I'm also learning some HTML!</h3>
-    <p>I can even mix JavaScript programs into my HTML pages -
-        click on the button below to see one of my javascript programs!</p>
-    <button onclick="drawName(); guessingGame(); drawCat();">Click to see my JavaScript program!</button>
+<h3>I'm not learning Javascript, I'm also learning some HTML!</h3>
+<p>I can even mix JavaScript programs into my HTML pages -
+    click one of the buttons below to see one of my javascript programs!</p>
+<button onclick="document.write('                  =^.^= ');myAudio.play();">Click to see my JavaScript program!</button>
+<p><a href="judah.html">Click here to go to my Judah page</a></p>
+    <p><a href="BouncingBallApp.html">Click to bounce some balls</a></p>
 </body>
-
 </HTML>
